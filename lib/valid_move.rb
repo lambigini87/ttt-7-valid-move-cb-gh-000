@@ -1,18 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-    if position_taken?(board, index) == false && board.empty? == true
-        return true
-
-    elsif position_taken?(board, index) == false && board.empty? == false
-        return true
-
-    elsif position_taken?(board, index) == true
-        return false
-    elsif !index.between?(0,8)
-      return false
-    else
-      return false
-    end
+    if !position_taken?(board, index) && index.between(1,9)
 
 
 end
