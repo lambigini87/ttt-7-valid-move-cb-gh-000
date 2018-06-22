@@ -1,16 +1,15 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
     if position_taken?(board, index) == false && board.empty? == true
-      return true
+        return true
 
     elsif position_taken?(board, index) == false && board.empty? == false
-      return true
+        return true
 
     elsif index.between?(1,9) == false
-      return false || nil
-    #
-    # else
-    #   return false
+        return false || nil
+    else
+        return false || nil
     end
 
 
