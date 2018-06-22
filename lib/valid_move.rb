@@ -5,13 +5,13 @@ def valid_move?(board, index)
 
     elsif position_taken?(board, index) == false && board.empty? == false
         return true
-        
+
     elsif position_taken?(board, index) == true
         return false
-        
+
     elsif !index.between?(1,9) 
         return false
-        
+
     else
         return false
     end
